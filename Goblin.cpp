@@ -11,13 +11,24 @@ void Goblin::attack(Enemy& enemy)
 void Goblin::playBase(Enemy& enemy)
 {
 
+	srand((int)time(NULL));
+	int attackNum = rand() % 2;
+
+
+	switch (attackNum)
+	{
+	case 0:cout << "ƒSƒuƒŠƒ“UŒ‚I" << endl;
+		attack(enemy);break;
+
+
+	case 1:cout << "ƒSƒuƒŠƒ“‚Ì‚Q‰ñUŒ‚I" << endl;
+		attack(enemy);
+		attack(enemy);break;
+	}
 	// A -> B‚ÖUŒ‚
-	cout << "ƒSƒuƒŠƒ“UŒ‚I" << endl;
-	attack(enemy);
+	
 
 	// ƒ‰ƒ“ƒ_ƒ€‚Å‚Q‰ñUŒ‚
-	cout << "ƒSƒuƒŠƒ“‚Ì‚Q‰ñUŒ‚I" << endl;
-	attack(enemy);
-	attack(enemy);
+	
 
 }
