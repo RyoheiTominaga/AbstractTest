@@ -2,7 +2,7 @@
 //
 
 #include <iostream>
-
+#include"Zombi.h"
 #include "Goblin.h"
 #include "Slime.h"
 
@@ -13,9 +13,9 @@ int main()
 
 	Goblin gA;
 	Slime sA;
-
+	Zombi zA;
 	gA.play(sA);
-
+	
 	sA.play(gA);
 	
 }
