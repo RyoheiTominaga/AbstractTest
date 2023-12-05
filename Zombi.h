@@ -1,11 +1,11 @@
 #pragma once
 #include "Enemy.h"
 
-class Character:
+class Zombi:
 	public Enemy
 {
 public:
-	 Character();
+	 Zombi();
      virtual void attack(Enemy& enemy) override;
      virtual void playBase(Enemy& enemy)override;
 };
