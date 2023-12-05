@@ -14,9 +14,13 @@ int main()
 	Goblin gA;
 	Slime sA;
 	Zombi zA;
-	gA.play(sA);
+	while (!gA.play(zA)||!zA.play(gA)) {
+		
+	}
+
+	/*gA.play(sA);
 	
-	sA.play(gA);
+	sA.play(gA);*/
 	
 }
 

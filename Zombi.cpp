@@ -8,5 +8,6 @@ void Zombi::attack(Enemy& enemy) {
 	enemy.damage(_atk);
 }
 void Zombi::playBase(Enemy&enemy) {
-
+	cout << "ƒ]ƒ“ƒrƒtƒBƒ“ƒK[" << endl;
+	attack(enemy);
 }
